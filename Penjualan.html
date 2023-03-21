@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Penjualan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+          .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid rgb(0, 13, 128);
+            padding: 10px;
+            background-color: rgba(127, 127, 192, 0.26);
+
+            
+             }
+            .penjualanInput {
+            font-size: 20px;
+            
+            }
+    </style>
+
+
+
+  
+</head>
+<body style="border-style: double;">
+
+    <div style="background-color: rgba(161, 255, 255, 0.877);">
+        <div style="border-style: solid; background-color: aqua ;">
+
+            <h1 style="text-align: center; color: rgb(93, 93, 224); outline: black; font-family: cursive; font-size: 40px;" >
+            Menu Penjualan
+            </h1>
+        </div>
+    
+        <div>
+            <br>
+
+        
+        <a href="./index.html" style="font-family: cursive; color: black; font-size: 30px; padding-left: 5%; color: rgb(90, 140, 231);">
+            
+        Halaman Utama <i class="material-icons" style="font-size: 40px;">home</i> </a> <br> <br>
+    
+        <a href="./AboutMe.html" style="font-family: cursive; color: black; font-size: 30px; padding-left: 5%; color: rgb(90, 140, 231);">
+            
+            About Me <i class="material-icons" style="font-size: 40px;">info</i> </a>
+        
+            
+            <div class="center">
+
+                <ul style="text-align: center;"> 
+                    <h2 style="font-family: cursive;">Penjualan</h2>
+
+                    <Label for="NamaBarang" class="penjualanInput">Nama Barang : </Label> <input type="text" id="NamaBarang"><br>
+
+                    <label for="hargaBarang" class="penjualanInput">Harga Barang :</label> <input type="number" id="hargaBarang"><br>
+
+                    <label for="jumlahBarang" class="penjualanInput">Jumlah Barang</label> <input type="number" id="jumlahBarang">
+                    <br><br>
+                    
+                    <button onclick="Penjualan()" style="font-size: medium;">Hitung Total</button>
+        
+
+
+                    
+                    <p id="hasilPenjualan" style="font-weight: bold; font-size: 17px;"></p> <br>
+      
+                 
+
+
+                    <!-- Perhitungan  dengan JS-->
+
+
+                 <script>
+
+                     function Penjualan() {
+
+                        var namaBarang1 = document.getElementById("NamaBarang").value;
+                        var hargaBarang1 = document.getElementById("hargaBarang").value;            
+                        var jumlahBarang1 = document.getElementById("jumlahBarang").value;
+                        var totalPenjualan = hargaBarang1 * jumlahBarang1;
+
+                        document.getElementById("hasilPenjualan").innerHTML = 
+                        "===================================================================================================" + "<br>" +
+                                   
+                        "Nama Barang : " + namaBarang1 + "<br>" +
+                        "Harga Barang :Rp." + hargaBarang1 + "<br>" +
+                        "Jumlah Barang : " + jumlahBarang1 + "<br>" +
+                        "<br>"+
+                        "Total Pembelian : Rp." + totalPenjualan
+                        + "<br>" + "<br>" + "<br>" +
+
+                        "Terima Kasih Telah Menggunakan Layanan ini :)"
+
+                        
+                        
+                        ;
+
+
+
+                     }
+
+                    
+
+                     
+                     
+                
+                
+
+
+
+                    </script>
+
+
+                    
+                   </ul>
+
+            </div>
+
+
+
+          
+            <br>
+            <br><br><br>
+    
+
+
+
+            <div style="background-color: rgba(161, 255, 255, 0.877); border-style: solid; background-color: rgba(117, 117, 231, 0.397);">
+            <h1 style="text-align: center; color: rgb(43, 10, 187);">Christian Egbert Repi - 20101106014 - A</h1>
+            </div>
+
+
+
+        
+
+        
+    
+
+
+
+
+    
+    
+        </div>
+        
+
+    </div>
+    
+    
+
+    
+</body>
+</html>
